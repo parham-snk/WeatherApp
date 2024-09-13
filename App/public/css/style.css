@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#container {
+    position: relative;
+    width: 1600px;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.current {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.current .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.current .box i {
+    font-size: 150px;
+}
+
+.current .box h1 {
+    font-size: 50px;
+    user-select: none;
+}
+
+#weakly {
+    transform: translateY(100px);
+    width: 100%;
+    height: 25%;
+
+}
+
+#weakly .g {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#weakly .g .d:not(:last-child){
+    border-right: 2px solid white;
+}
+
+#weakly .g .d {
+    width: 200px;
+    height: 90%;
+    
+}
+
+#weakly .g .d figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#weakly .g .d figure>i {
+    position: relative;
+    font-size: 60px;
+    padding: 10px 0;
+}
+
+#weakly .g .d figure>figcaption {
+    width: 50%;
+    height: 100px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+#weakly .g .d figure>figcaption .p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#weakly .g .d figure>figcaption .p i {
+    font-size: 25px;
+}
+
+#weakly .g .d figure>figcaption .p .low {
+    color: rgb(30, 146, 255);
+}
+
+#weakly .g .d figure>figcaption .p .high {
+    color: rgb(255, 30, 30);
+}
+
+#weakly .g .d figure>figcaption .p .temp {
+    display: flex;
+    flex-direction: column-reverse;
+}
