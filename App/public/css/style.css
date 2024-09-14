@@ -9,6 +9,7 @@ body {
     align-items: center;
     background-color: black;
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #container {
@@ -62,14 +63,14 @@ body {
     align-items: center;
 }
 
-#weakly .g .d:not(:last-child){
+#weakly .g .d:not(:last-child) {
     border-right: 2px solid white;
 }
 
 #weakly .g .d {
     width: 200px;
     height: 90%;
-    
+
 }
 
 #weakly .g .d figure {
@@ -80,7 +81,6 @@ body {
 }
 
 #weakly .g .d figure>i {
-    position: relative;
     font-size: 60px;
     padding: 10px 0;
 }
@@ -89,6 +89,8 @@ body {
     width: 50%;
     height: 100px;
     display: grid;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -99,9 +101,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 #weakly .g .d figure>figcaption .p i {
+    padding: 5px;
     font-size: 25px;
 }
 
@@ -116,4 +120,19 @@ body {
 #weakly .g .d figure>figcaption .p .temp {
     display: flex;
     flex-direction: column-reverse;
+}
+
+#weakly .g .d figure>figcaption .p .Dname {
+    grid-column-start: 0;
+    grid-column-end: 3;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 6px;
 }
