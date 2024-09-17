@@ -3,6 +3,7 @@
 
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,184 +11,31 @@
   <link rel="stylesheet" href="/public/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>Weather Application</title>
-  <!-- <script src="/public/js/Weather.js"></script> -->
+  <script src="/public/js/Weather.js"></script>
 </head>
 
 <body>
+
+
+  <div id="loading">
+    Loading<span id="point"></span>
+  </div>
   <div id="container">
     <div class="current">
       <div class="box">
-        <i class="bi bi-cloud-moon-fill"></i>
+        <i id="icon"></i>
         <br>
         <br>
-        <h1>16 <sup><sup>o</sup>C</sup></h1>
+        <h1 style="font-size: xx-large;"><span id="temp"></span> <sup><sup>o</sup>C</sup></h1>
+        <h1 id="city"></h1>
       </div>
     </div>
     <div id="weakly">
-      <div class="g">
-        <div class="d">
-          <figure>
-            <i class="bi bi-cloud-sun"></i>
-            <figcaption>
-              <div class="p">
-                <i class="bi bi-thermometer-half"></i>
-                <div class="temp">
-                  <div class="low">16</div>
-                  <div class="high">32</div>
-                </div>
-
-              </div>
-              <div class="p">
-                <i class="bi bi-umbrella"></i>
-                <p>32%</p>
-              </div>
-              <div class="p" style="grid-column: 1/3;">
-                <div class="Dname">Today</div>
-              </div>
-
-            </figcaption>
-          </figure>
-        </div>
-        <div class="d">
-          <figure>
-            <i class="bi bi-cloud-sun"></i>
-            <figcaption>
-              <div class="p">
-                <i class="bi bi-thermometer-half"></i>
-                <div class="temp">
-                  <div class="low">16</div>
-                  <div class="high">32</div>
-                </div>
-
-              </div>
-              <div class="p">
-                <i class="bi bi-umbrella"></i>
-                <p>32%</p>
-              </div>
-              <div class="p" style="grid-column: 1/3;">
-                <div class="Dname">Today</div>
-              </div>
-
-            </figcaption>
-          </figure>
-        </div>
-
-        <div class="d">
-          <figure>
-            <i class="bi bi-cloud-sun"></i>
-            <figcaption>
-              <div class="p">
-                <i class="bi bi-thermometer-half"></i>
-                <div class="temp">
-                  <div class="low">16</div>
-                  <div class="high">32</div>
-                </div>
-
-              </div>
-              <div class="p">
-                <i class="bi bi-umbrella"></i>
-                <p>32%</p>
-              </div>
-              <div class="p" style="grid-column: 1/3;">
-                <div class="Dname">Today</div>
-              </div>
-
-            </figcaption>
-          </figure>
-        </div>
-        <div class="d">
-          <figure>
-            <i class="bi bi-cloud-sun"></i>
-            <figcaption>
-              <div class="p">
-                <i class="bi bi-thermometer-half"></i>
-                <div class="temp">
-                  <div class="low">16</div>
-                  <div class="high">32</div>
-                </div>
-
-              </div>
-              <div class="p">
-                <i class="bi bi-umbrella"></i>
-                <p>32%</p>
-              </div>
-              <div class="p" style="grid-column: 1/3;">
-                <div class="Dname">Today</div>
-              </div>
-
-            </figcaption>
-          </figure>
-        </div>
-        <div class="d">
-          <figure>
-            <i class="bi bi-cloud-sun"></i>
-            <figcaption>
-              <div class="p">
-                <i class="bi bi-thermometer-half"></i>
-                <div class="temp">
-                  <div class="low">16</div>
-                  <div class="high">32</div>
-                </div>
-
-              </div>
-              <div class="p">
-                <i class="bi bi-umbrella"></i>
-                <p>32%</p>
-              </div>
-              <div class="p" style="grid-column: 1/3;">
-                <div class="Dname">Today</div>
-              </div>
-
-            </figcaption>
-          </figure>
-        </div>
-        <div class="d">
-          <figure>
-            <i class="bi bi-cloud-sun"></i>
-            <figcaption>
-              <div class="p">
-                <i class="bi bi-thermometer-half"></i>
-                <div class="temp">
-                  <div class="low">16</div>
-                  <div class="high">32</div>
-                </div>
-
-              </div>
-              <div class="p">
-                <i class="bi bi-umbrella"></i>
-                <p>32%</p>
-              </div>
-              <div class="p" style="grid-column: 1/3;">
-                <div class="Dname">Today</div>
-              </div>
-
-            </figcaption>
-          </figure>
-        </div>
-        <div class="d">
-          <figure>
-            <i class="bi bi-cloud-sun"></i>
-            <figcaption>
-              <div class="p">
-                <i class="bi bi-thermometer-half"></i>
-                <div class="temp">
-                  <div class="low">16</div>
-                  <div class="high">32</div>
-                </div>
-
-              </div>
-              <div class="p">
-                <i class="bi bi-umbrella"></i>
-                <p>32%</p>
-              </div>
-              <div class="p" style="grid-column: 1/3;">
-                <div class="Dname">Today</div>
-              </div>
-
-            </figcaption>
-          </figure>
-        </div>
+      <div class="g" id="g">
         
+        
+        </div>
+
 
       </div>
     </div>
