@@ -1,0 +1,45 @@
+<!-- API Weather is https://api.open-meteo.com/v1/forecast?latitude=29.6103&longitude=52.5311&current=temperature_2m,relative_humidity_2m,is_day,rain&timezone=auto&forecast_days=1-->
+
+
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Weather Application</title>
+</head>
+
+<body>
+
+
+  <div id="loading">
+    Loading<span id="point"></span>
+  </div>
+  <div id="container">
+    <div class="current">
+      <div class="box">
+        <i id="icon"></i>
+        <br>
+        <br>
+        <h1 style="font-size: xx-large;"><span id="temp"></span> <sup><sup>o</sup>C</sup></h1>
+        <h1 id="city"></h1>
+      </div>
+    </div>
+    <div id="weakly">
+      <div class="g" id="g">
+
+
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+</body>
+<script src="/public/js/Weather.js"></script>
+
+</html>
